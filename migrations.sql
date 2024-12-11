@@ -1,10 +1,14 @@
+-- 0.
+ DROP DATABASE IF EXISTS blog_ipb23;
+ 
 -- 1. izveido datu bāzi
-CREATE DATABASE blog_ipb23;
+ CREATE DATABASE blog_ipb23;
 
 -- 2. izmanto datu bāzi
  USE blog_ipb23;
 
 -- 3. Izveidot tabulu
+
 CREATE TABLE posts (
 		id INT NOT NULL PRIMARY KEY AUTO_INCREMENT,
 		content VARCHAR(5200)  
