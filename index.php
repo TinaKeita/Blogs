@@ -23,8 +23,9 @@ $params = [];
 
 if  (isset($_GET["search_query"]) && $_GET["search_query"] != ""){
   //ja kaut kas tiek meklēts tad secelct izpilda vaicājumu
-  $select .= " WHERE content LIKE '%" . $_GET["search_query"] . "%'";
-  $params
+  $search_query = "%" . $_GET["search_query"] . "%";
+  $select .= " WHERE content LIKE :nosaukums;";
+  $params = ["nosaukums" => $search_query];
 }
 
 // Pie new Database izpildās konstrukotrs
