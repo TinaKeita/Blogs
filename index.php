@@ -24,8 +24,8 @@ $params = [];
 if  (isset($_GET["search_query"]) && $_GET["search_query"] != ""){
   //ja kaut kas tiek meklēts tad secelct izpilda vaicājumu
   $search_query = "%" . $_GET["search_query"] . "%";
-  $select .= " WHERE content LIKE :nosaukums;";
-  $params = ["nosaukums" => $search_query];
+  $select .= " WHERE content LIKE :nosaukums;"; //sagatavotais vaicājums
+  $params = ["nosaukums" => $search_query]; //saistītais parametrs
 }
 
 // Pie new Database izpildās konstrukotrs
@@ -37,6 +37,10 @@ echo "<form>";
 echo "<input name='search_query' />";
 echo "<button>Meklēt</button>"; //search bars
 echo "</form>";
+
+if(count($posts) == 0 ){
+    echo "No posts found!";
+}
 
 //izvads
 echo "<ul>";
