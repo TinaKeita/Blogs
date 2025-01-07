@@ -11,12 +11,12 @@ class Database{
         $this->pdo = new PDO($dsn);
         $this->pdo->setAttribute(PDO::ATTR_DEFAULT_FETCH_MODE, PDO::FETCH_ASSOC); //nodrošina assoc masīvu
     }
-    public function query($sql){
-
+    
+    public function query($sql, $params){
         // 1. sagatavot vaicājumu (statement)
         $statement = $this->pdo->prepare($sql); // pievieno this lai saprastu kurš mainīgais tiek izmnatots
         // 2.Izpildit statement
-        $statement->execute();
+        $statement->execute($params);
         return $statement;
     }
 }
