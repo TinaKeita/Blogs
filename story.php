@@ -1,0 +1,3 @@
+<?php
+
+$tilte = 'Daudz teksta';

@@ -31,22 +31,6 @@ if  (isset($_GET["search_query"]) && $_GET["search_query"] != ""){
 // Pie new Database izpildās konstrukotrs
 $posts = $db->query($select, $params)->fetchAll();//metode atgriež asoc masīvu ar datiem
 
-echo "<h2>Blogs</h2>";
-
-echo "<form>";
-echo "<input name='search_query' />";
-echo "<button>Meklēt</button>"; //search bars
-echo "</form>";
-
-if(count($posts) == 0 ){
-    echo "No posts found!";
-}
-
-//izvads
-echo "<ul>";
-    foreach ($posts as $post) { 
-       echo "<li>" . $post["content"] . "</li>";
-    }
-echo "</ul>";
+require "views/index.view.php"; //pēdējā rinda lai visi mainīgie eksitētu
 
 ?>
