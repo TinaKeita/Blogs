@@ -1,3 +1,5 @@
 <?php
 
-$tilte = 'Daudz teksta';
+$title = "Blogu revolūcija";
+
+require 'views/story.view.php';
