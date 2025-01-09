@@ -1,12 +1,6 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Categories</title>
-</head>
-<body>
-    <h2>Kategorijas</h2>
+<?php require "views/components/header.php"?>
+<?php require "views/components/navbar.php"?>
+<h2>Kategorijas</h2>
 
     <form>
         <input name='search_query' />
@@ -21,7 +15,6 @@
         <?php foreach ($categories as $categorie) { ?>
             <li> <?= $categorie["category_name"] ?> </li>
         <?php } ?>
-    <ul>
+    </ul>
 
-</body>
-</html>
+    <?php require "views/components/footer.php"?>

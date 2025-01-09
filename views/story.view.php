@@ -1,12 +1,6 @@
-<!DOCTYPE html>
-<html lang="lv">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title><?= $title ?></title>
-    <link rel="stylesheet" href="css/style_story.css">
+<?php require "components/header.php"?>
+<?php require "components/navbar.php"?> 
 
-</head>
 <body>
     <h1>Blogu revolūcija: populārās blogu platformas <em><?= $title ?></em> stāsts</h1>
 
@@ -25,5 +19,4 @@
         Latvijā vadošo blogošanas platformu. Lietotāju skaits strauji pieaug, jo cilvēki no visas Latvijas novērtē 
         iespējas, ko piedāvā <?= $title ?>, un platformas radīto ciešo saikni starp rakstniekiem 
         un lasītājiem.</p>
-</body>
-</html>
+<?php require "components/footer.php"?>

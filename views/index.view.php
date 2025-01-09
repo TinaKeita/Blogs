@@ -1,13 +1,7 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Blogs</title>
-</head>
-<body>
+<?php require "components/header.php"?>
+<?php require "components/navbar.php"?> 
     
-    <h2>Blogs</h2>
+<h2>Blogs</h2>
 
     <form>
         <input name='search_query' placeholder='Atslēgasvārds..' value='<?= $_GET["search_query"] ?? "" ?>'/>
@@ -26,6 +20,4 @@
     </ul>
 
 <!-- php tagu count - 5 -->
-
-</body>
-</html>
+<?php require "views/components/footer.php"?>

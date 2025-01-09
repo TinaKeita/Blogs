@@ -1,0 +1,47 @@
+/* navbar.css - stili visām lapām, kas izmanto vienotu navigācijas joslu */
+
+header {
+    background-color: #3498db;  /* Gaiša zila krāsa */
+    padding: 10px 20px;
+    border-bottom: 1px solid #ddd;  /* Gaišākas pelēkas krāsas robeža */
+    box-shadow: 7px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+header ul {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;  /* Centra pozicionēšana */
+    gap: 20px;
+    list-style: none;
+}
+
+header ul li {
+    padding: 10px 15px;
+}
+
+header ul li a {
+    text-decoration: none;
+    color: #fff;  /* Balts teksts */
+    font-size: 1.1em;
+    transition: background-color 0.3s ease, padding 0.3s ease;  /* Pārejas efekts */
+}
+
+header ul li a:hover {
+    background-color: #2980b9;  /* Tumšāka zila krāsa pie hover */
+    padding: 10px 20px;  /* Palielināts padding pie hover */
+    border-radius: 5px;  /* Noapaļotas malas */
+}
+
+@media (max-width: 600px) {
+    header ul {
+        flex-direction: column;
+        align-items: center;
+    }
+    header ul li {
+        margin: 10px 0;
+    }
+    header ul li a {
+        font-size: 1em;
+    }
+}
