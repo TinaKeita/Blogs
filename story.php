@@ -1,6 +1,6 @@
 <?php
 
-$title = "Blogu revolūcija";
+$title = "Skrienam internetā";
 
 require 'views/story.view.php';
 
