@@ -1,7 +1,5 @@
 <?php 
 
-
-$db = new Database($config["database"]);
 $select = "SELECT * FROM categories"; 
 $params = [];
 
@@ -14,6 +12,6 @@ if  (isset($_GET["search_query"]) && $_GET["search_query"] != ""){
 $categories = $db->query($select, $params)->fetchAll();
 
 $pageTitle = "Kategorijas";
-$style = "css/cat_style.php";
-require "../views/categories.view.php";
+$style = "../css/cat_style.CSS";
+require "views/categories.view.php";
 ?>

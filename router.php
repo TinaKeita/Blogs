@@ -1,13 +1,14 @@
 <?php
- $uri = parse_url($_SERVER["REQUEST_URI"])["path"];
+ 
+$uri = parse_url($_SERVER["REQUEST_URI"])["path"];
 
 if ($uri == "/"){
     require "controllers/index.php";
 }
-elseif ($uri == "about"){
+elseif ($uri == "/about"){
     require "controllers/story.php";
 }
-elseif ($uri == "categories"){
+elseif ($uri == "/categories"){
     require "controllers/categories.php";
 }
 else {

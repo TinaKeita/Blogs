@@ -3,8 +3,8 @@
 $title = "Skrienam internetā";
 
 $pageTitle = "Stāsts";
-$style = "css/style_story.css";
+$style = "../css/style_story.css";
 
-require '../views/story.view.php';
+require 'views/story.view.php';
 
 ?>

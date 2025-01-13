@@ -1,8 +1,9 @@
 <?php
-require "functions.php";
-require "Database.php";
-require "router.php";
-$config = require("config.php");
+require_once "functions.php";
+require_once "Database.php";
+
+$config = require ("config.php");
 
 $db = new Database($config["database"]);
+require_once "router.php";
 ?>

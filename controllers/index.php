@@ -11,9 +11,6 @@ echo "
 
 //Mērķis: drošība un kods īsāks
 
-$db = new Database($config["database"]); //jauna klase kas savieno ar datu bāzi
-//dd($posts[0] ["content"]); - dump and die - dumpo dd contentu browserī
-
 $select = "SELECT * FROM posts"; 
 $params = [];
 
@@ -28,6 +25,6 @@ if  (isset($_GET["search_query"]) && $_GET["search_query"] != ""){
 $posts = $db->query($select, $params)->fetchAll();//metode atgriež asoc masīvu ar datiem
 
 $pageTitle = "Blogs";
-require "../views/index.view.php"; //pēdējā rinda lai visi mainīgie eksitētu
+require "views/index.view.php"; //pēdējā rinda lai visi mainīgie eksitētu
 
 ?>
