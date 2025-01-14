@@ -25,6 +25,6 @@ if  (isset($_GET["search_query"]) && $_GET["search_query"] != ""){
 $posts = $db->query($select, $params)->fetchAll();//metode atgriež asoc masīvu ar datiem
 
 $pageTitle = "Blogs";
-require "views/index.view.php"; //pēdējā rinda lai visi mainīgie eksitētu
+require "views/posts/index.view.php"; //pēdējā rinda lai visi mainīgie eksitētu
 
 ?>

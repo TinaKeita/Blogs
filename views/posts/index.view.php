@@ -1,6 +1,6 @@
-
-<?php require "components/header.php"?>
-<?php require "components/navbar.php"?> 
+<?php $style2 = "css/kop_stils.css"?>
+<?php require "views/components/header.php"?>
+<?php require "views/components/navbar.php"?> 
     
 <h2>Blogs</h2>
 
@@ -16,7 +16,7 @@
 
     <ul> 
      <?php foreach ($posts as $post) { ?>
-           <li> <?= $post["content"] ?></li> 
+           <li><a href="show?id=<?= $post["id"] ?> ">  <?= $post["content"] ?></a></li> 
     <?php } ?>
     </ul>
 

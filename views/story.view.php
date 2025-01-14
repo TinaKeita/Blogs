@@ -1,5 +1,6 @@
 <?php $pageTitle = "Stāsts";?>
-<?php $style = "css/style_story.css";?>
+<?php $style = "css/style_story2.css";?>
+<?php $style = "css/kop_stils.css";?>
 <?php require "components/header.php"?>
 <?php require "components/navbar.php"?> 
 
