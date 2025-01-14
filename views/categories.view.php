@@ -1,3 +1,4 @@
+<?php $style = "css/cat_style.css";?>
 <?php require "views/components/header.php"?>
 <?php require "views/components/navbar.php"?>
 <h2>Kategorijas</h2>

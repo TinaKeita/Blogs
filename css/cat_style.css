@@ -1,69 +1,65 @@
-/* Resetting margins, padding, and box-sizing globally */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-/* Body Styling */
 body {
-    background-color: #1e1e1e; /* Dark background for the body */
-    font-family: 'Roboto', sans-serif; /* Font family */
-    color: #dcdcdc; /* Light text color */
+    background-color: #1e1e1e;
+    font-family: 'Roboto', sans-serif;
+    color: #dcdcdc;
     padding: 20px;
     display: flex;
     flex-direction: column;
 }
 
-/* Navbar Styling */
 nav {
-    background-color: #333; /* Dark background for the navbar */
-    padding: 15px 30px; /* Padding around the navbar */
-    border-radius: 8px; /* Rounded corners */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5); /* Shadow for depth */
-    margin-bottom: 20px; /* Space below the navbar */
+    background-color: #333;
+    padding: 15px 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: center;
 }
 
-/* Navbar List Styling */
 nav ul {
     list-style: none;
     display: flex;
-    justify-content: center; /* Center navbar items horizontally */
-    align-items: center;
+    justify-content: center;
+    padding: 0;
+    margin: 0;
 }
 
 nav li {
-    margin: 0 15px; /* Space between navbar items */
+    margin: 0 15px;
 }
 
-/* Navbar Link Styling */
 nav a {
-    text-decoration: none; /* Remove underline from links */
-    color: #fff; /* White text */
-    font-size: 18px; /* Font size */
-    padding: 10px 15px; /* Padding inside the links */
-    border-radius: 4px; /* Rounded corners for the links */
-    transition: all 0.3s ease; /* Smooth transition for hover effect */
+    text-decoration: none;
+    color: #fff;
+    font-size: 18px;
+    padding: 10px 15px;
+    border-radius: 4px;
+    transition: all 0.3s ease;
 }
 
 nav a:hover {
-    background-color: #e76f68; /* Hover effect: background color change */
-    color: #fff; /* Text remains white */
-    transform: scale(1.05); /* Slight zoom effect on hover */
+    background-color: #e76f68;
+    color: #fff;
+    transform: scale(1.05);
 }
 
-/* Heading Styling */
 h1, h2 {
-    color: #fff; /* White color for headings */
+    color: #fff;
     font-size: 32px;
     margin-bottom: 20px;
 }
 
 h2 {
-    font-size: 28px; /* Smaller heading font size */
+    font-size: 28px;
 }
 
-/* Form Styling */
 form {
     display: flex;
     flex-direction: column;
@@ -85,12 +81,12 @@ input[name='search_query'] {
 }
 
 input[name='search_query']:focus {
-    border-color: #e76f68; /* Focused input box border color */
-    box-shadow: 0 0 8px rgba(231, 111, 104, 0.5); /* Box shadow on focus */
+    border-color: #e76f68;
+    box-shadow: 0 0 8px rgba(231, 111, 104, 0.5);
 }
 
 input[name='search_query']:hover {
-    background-color: #3d3d3d; /* Hover effect for the input */
+    background-color: #3d3d3d;
 }
 
 button {
@@ -109,7 +105,6 @@ button:hover {
     transform: scale(1.05);
 }
 
-/* List Styling for Blog Posts */
 ul {
     list-style-type: none;
     margin-top: 20px;
@@ -138,48 +133,42 @@ li:hover {
     margin-top: 20px;
 }
 
-/* Responsive Styling for Mobile Devices (Screen width below 768px) */
 @media (max-width: 768px) {
-    /* Navbar Responsive */
     nav ul {
-        flex-direction: column; /* Stack navbar items vertically */
-        align-items: flex-start; /* Align navbar items to the left */
+        flex-direction: column;
+        align-items: flex-start;
     }
 
     nav li {
-        width: 100%; /* Make each list item take full width */
-        text-align: left; /* Align text to the left */
-        margin-bottom: 10px; /* Space between items */
+        width: 100%;
+        text-align: left;
+        margin-bottom: 10px;
     }
 
     nav a {
-        width: 100%; /* Make links full width on mobile */
-        padding: 12px 15px; /* Increase padding for mobile */
-        text-align: center; /* Center the text in links */
+        width: 100%;
+        padding: 12px 15px;
+        text-align: center;
     }
 
-    /* Body Padding Adjustments for Mobile */
     body {
         padding: 10px;
     }
 
-    /* Heading Styling on Small Screens */
     h1, h2 {
-        font-size: 28px; /* Adjust font size for mobile */
+        font-size: 28px;
     }
 
-    /* Form Styling on Mobile */
     form {
         max-width: 100%;
     }
 
-    /* List Styling Adjustments */
     ul {
         width: 100%;
         max-width: 100%;
     }
 
     li {
-        margin-bottom: 10px; /* Reduce bottom margin between items on mobile */
+        margin-bottom: 10px;
     }
 }
