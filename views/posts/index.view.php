@@ -18,7 +18,7 @@
      <?php foreach ($posts as $post) { ?>
            <li><a href="show?id=<?= $post["id"] ?> ">  <?= $post["content"] ?></a></li> 
     <?php } ?>
-    </ul>
+     </ul>
 
 <!-- php tagu count - 5 -->
 <?php require "views/components/footer.php"?>
