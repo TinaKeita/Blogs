@@ -1,13 +1,4 @@
 <?php
-echo "
-<style>
-    body {
-      background-color:D7D3BF;
-      font-size: 20px;
-      font-family: Consolas;
-    }
-
-</style>";
 
 //Mērķis: drošība un kods īsāks
 

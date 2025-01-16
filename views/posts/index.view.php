@@ -1,3 +1,4 @@
+<?php $style = "css/style_story2.css";?>
 <?php $style2 = "css/kop_stils.css"?>
 <?php require "views/components/header.php"?>
 <?php require "views/components/navbar.php"?> 
@@ -16,7 +17,7 @@
 
     <ul> 
      <?php foreach ($posts as $post) { ?>
-           <li><a href="show?id=<?= $post["id"] ?> ">  <?= $post["content"] ?></a></li> 
+           <li><a href="show?id=<?= $post["id"] ?> ">  <?= htmlspecialchars($post["content"]) ?></a></li> 
     <?php } ?>
      </ul>
 
