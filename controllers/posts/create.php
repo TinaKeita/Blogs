@@ -1,9 +1,11 @@
 <?php
 
- if ($_SERVER['REQUEST_METHOD'] == 'POST'){
-$errors = [];
+require "Validator.php";
 
-    if(!isset($_POST["content"]) == true || strlen($_POST["content"]) == 0 || strlen($_POST["content"]) > 50){
+ if ($_SERVER['REQUEST_METHOD'] == 'POST'){
+    $errors = [];
+
+    if(!Validator::string($_POST["content"], max: 50)){
         $errors["content"] = "Ievadiet atbilstošu Bloga Iearkstu! 🙏";
     }
     elseif(empty($errors)){

@@ -10,6 +10,7 @@
         <button>Meklēt</button>
     </form>
 
+
     <?php if(count($posts) == 0 ){ ?>
         <p>No posts found!</p>
     }
@@ -17,7 +18,7 @@
 
     <ul> 
      <?php foreach ($posts as $post) { ?>
-           <li><a href="show?id=<?= $post["id"] ?> ">  <?= htmlspecialchars($post["content"]) ?></a></li> 
+           <li><a href="show?id=<?= $post["id"] ?> "></a></li> 
     <?php } ?>
      </ul>
 
