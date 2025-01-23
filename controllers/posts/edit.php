@@ -12,7 +12,7 @@ if(isset($_GET["id"])){
         $errors = []; 
     
         if(!Validator::string($_POST["content"], max: 50)){
-            $errors["content"] = "Nav ko labot!";
+            $errors["content"] = "Dzēšana nav labošana! Ieraksti labojumu!";
         }
         elseif(empty($errors)){
             $sql = "UPDATE posts SET content = :content WHERE id = :id;";

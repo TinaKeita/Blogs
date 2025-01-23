@@ -6,7 +6,8 @@ return [
     "/show" => "controllers/posts/show.php",
     "/categories" => "controllers/categories.php",
     "/create" => "controllers/posts/create.php",
-    "/edit" => "controllers/posts/edit.php"
+    "/edit" => "controllers/posts/edit.php",
+    "/delete" => "controllers/posts/delete.php"
 ]
 
 ?>
