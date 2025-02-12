@@ -1,23 +1,15 @@
 <?php
 
-require "Validator.php";
-
-if(!isset($_POST["id"])) {
+if(isset($_POST["id"])) {
+    $sql = "DELETE FROM posts WHERE id = :id;";
+    $params = ["id" => $_POST["id"]];
+    $posts = $db->query($sql, $params)->fetchAll();
+        
+    header("Location: /"); 
+    exit();
+} else{
     redirectIfNotFound();
 }
-
-    if(!Validator::string($_POST["id"])){
-        $errors["content"] = "Dzēšana nav iespējama!";
-    }
-    elseif(empty($errors)){
-        $params = ["id" => $_POST["id"]];
-        $sql = "DELETE FROM posts WHERE id = :id;";
-        $posts = $db->query($sql, $params)->fetchAll();
-        
-        
-        header("Location: /"); 
-        exit();
-    }
  
 
 $pageTitle = "Dzēšana!";
