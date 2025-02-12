@@ -13,7 +13,6 @@
 
     <?php if(count($posts) == 0 ){ ?>
         <p>No posts found!</p>
-    }
     <?php } ?>
 
     <ul> 
