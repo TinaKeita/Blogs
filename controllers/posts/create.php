@@ -17,9 +17,8 @@ require "Validator.php";
     }
  
 
- 
+}
 
- }
 
 $pageTitle = "Ievades lauks!";
 require "views/posts/create.view.php";
