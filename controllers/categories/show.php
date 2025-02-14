@@ -11,3 +11,4 @@ if(!isset($_GET["id"]) || $_GET["id"] == "") {
 if (!$post){
     redirectIfNotFound();
 }
+require "views/categories/show.view.php";

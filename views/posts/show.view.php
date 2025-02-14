@@ -6,6 +6,7 @@
 <?php require "views/components/navbar.php"?> 
     
 <h2><?= htmlspecialchars($post["content"]) ?></h2>
+
 <a href="/edit?id=<?= $post["id"] ?> ">Labot ierakstu</a>
 
 <form method="POST" action="/delete">

@@ -1,5 +1,7 @@
 <?php
 $select = "SELECT * FROM categories"; 
 $params = [];
-$posts = $db->query($select, $params)->fetchAll();
+$categories = $db->query($select, $params)->fetchAll();
 
+$pageTitle = "Kategorijas";
+require "views/categories/index.view.php";

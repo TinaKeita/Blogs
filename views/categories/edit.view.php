@@ -1,4 +1,5 @@
-<?php $style2 = "css/kop_stils.css"?>
+<?php $style = "/css/style_story2.css";?>
+<?php $style2 = "/css/kop_stils.css"?>
 <?php $pageTitle = "Rediģē kategoriju";?>
 
 <?php require "views/components/header.php"?>

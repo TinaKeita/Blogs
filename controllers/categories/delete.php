@@ -10,3 +10,4 @@ if(isset($_POST["id"])) {
 } else{
     redirectIfNotFound();
 }
+require "views/categories/create.view.php";
