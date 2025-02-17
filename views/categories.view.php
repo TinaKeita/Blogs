@@ -4,11 +4,6 @@
 <?php require "views/components/navbar.php"?>
 <h2>Kategorijas</h2>
 
-    <form>
-        <input name='search_query' />
-        <button>Meklēt</button>
-    </form>
-
     <?php if(count($categories) == 0 ){ ?>
         <p>Nekas netika atrasts!</p>
     <?php } ?>

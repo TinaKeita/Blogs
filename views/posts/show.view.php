@@ -6,12 +6,13 @@
 <?php require "views/components/navbar.php"?> 
     
 <h2><?= htmlspecialchars($post["content"]) ?></h2>
+<p>Kategorija: <?= $post["category_name"] ?></p>
 
-<a href="/edit?id=<?= $post["id"] ?> ">Labot ierakstu</a>
+<a href="/edit?id=<?= $post["id"] ?> " class="button-link">Labot ierakstu</a>
 
 <form method="POST" action="/delete">
     <input name="id" value="<?=$post['id']?>" type="hidden" />
-    <input type="submit" value="Dzēst"/>
+    <input type="submit" value="Dzēst" class="button"/>
 </form>
 
 <!-- php tagu count - 5 -->

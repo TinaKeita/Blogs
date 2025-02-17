@@ -7,7 +7,7 @@
 
     <form>
         <input name='search_query' placeholder='Atslēgasvārds..' value='<?= $_GET["search_query"] ?? "" ?>'/>
-        <button>Meklēt</button>
+        <button class="search">Meklēt</button>
     </form>
 
 

@@ -7,9 +7,18 @@
 
 <h2>Labo ierakstu!</h2>
 <form method="POST">
-    <input name="content" value="<?=$post['content'] ?? '' ?>"/>
-    <input name="id" type="hidden" value="<?=$post['id']?>"/>
-    <button>Saglābt</button>
+<input name="content" value="<?=$post['content'] ?? '' ?>"/>
+    <select name="category_id" class="options">
+        <?php foreach ($categories as $category) { ?> 
+
+            <option value = "<?= $category["id"] ?>">
+            <?= $category["category_name"] ?>
+            </option>
+    
+        <?php } ?>
+    </select>
+<input name="id" type="hidden" value="<?=$post['id']?>"/>
+<button class="search">Saglābt</button>
 
 <?php if(isset($errors["content"])) { ?>
        <p><?= $errors["content"] ?></p>

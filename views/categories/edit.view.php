@@ -9,7 +9,7 @@
 <form method="POST">
     <input name="category_name" value="<?=$post['category_name'] ?? '' ?>"/>
     <input name="id" type="hidden" value="<?=$post['id']?>"/>
-    <button>Saglābt</button>
+    <button class="search">Saglābt</button>
 
 <?php if(isset($errors["category_name"])) { ?>
        <p><?= $errors["category_name"] ?></p>

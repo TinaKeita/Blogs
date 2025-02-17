@@ -7,7 +7,7 @@
 <h2>Izveido kategoriju!</h2>
 <form method="POST">
     <label><input name="category_name" value="<?=$_POST['category_name'] ?? '' ?>"/></label> 
-    <button>Saglābt</button>
+    <button class="search">Saglābt</button>
 
 <?php if(isset($errors["category_name"])) { ?>
        <p><?= $errors["category_name"] ?></p>
