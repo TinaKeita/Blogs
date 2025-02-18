@@ -8,11 +8,12 @@ $categories = $db->query($sql, $params)->fetchAll();
 
  if ($_SERVER['REQUEST_METHOD'] == 'POST'){
     $errors = [];
+    $category_id = isset($_POST["category_id"]) ? $_POST["category_id"] : 0;
 
     if(!Validator::string($_POST["content"], max: 50)){
         $errors["content"] = "Ievadiet atbilstošu Bloga Iearkstu! 🙏";
     }
-    if(!Validator::number($_POST["category_id"])){
+    if($category_id !== "0" && !Validator::number($_POST["category_id"])){
         $errors["content"] = "Izvēlieties atbilstošu kategoriju!";
     }
     elseif(empty($errors)){

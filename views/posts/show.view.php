@@ -6,7 +6,16 @@
 <?php require "views/components/navbar.php"?> 
     
 <h2><?= htmlspecialchars($post["content"]) ?></h2>
-<p>Kategorija: <?= $post["category_name"] ?></p>
+<p>        
+    Kategorija: 
+        <?php 
+            if ($post["category_id"] == 0) {
+                echo "Kategorija nav piešķirta";
+            } else {
+                echo $post["category_name"];
+            }
+        ?>
+</p>
 
 <a href="/edit?id=<?= $post["id"] ?> " class="button-link">Labot ierakstu</a>
 

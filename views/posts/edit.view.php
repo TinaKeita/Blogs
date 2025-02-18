@@ -9,6 +9,7 @@
 <form method="POST">
 <input name="content" value="<?=$post['content'] ?? '' ?>"/>
     <select name="category_id" class="options">
+    <option value="0">Bez kategorijas</option>
         <?php foreach ($categories as $category) { ?> 
 
             <option value = "<?= $category["id"] ?>">
