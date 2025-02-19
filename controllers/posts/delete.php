@@ -5,6 +5,8 @@ if(isset($_POST["id"])) {
     $params = ["id" => $_POST["id"]];
     $posts = $db->query($sql, $params)->fetchAll();
         
+
+    
     header("Location: /"); 
     exit();
 } else{
