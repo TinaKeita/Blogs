@@ -34,6 +34,14 @@ VALUES
 ("ColdPlay Latvijā"),
 ("Gan jau ka pietiks skriet");
 
+-- 5. Izveidojam 'comments' tabulu
+CREATE TABLE comments (
+    id INT NOT NULL PRIMARY KEY AUTO_INCREMENT,
+    autors VARCHAR(255),
+    datet DATETIME,
+    content VARCHAR (5200)
+);
+
 -- 7. Saistām katru ierakstu ar atbilstošo kategoriju (atjauninām category_id)
 UPDATE posts
 SET category_id = 1
